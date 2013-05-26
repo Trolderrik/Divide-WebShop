@@ -1,0 +1,45 @@
+﻿@{
+    Page.Title = "Købssiden";
+
+    
+   
+   var db = Database.Open("bakery");
+   var products = db.Query("SELECT * FROM PRODUCTS").ToList();
+   var featured = products[new Random().Next(products.Count)];
+}
+
+
+ <div id="container">
+    <div id="maincontent">
+        <h1>Order</h1>
+            <form action="" method="POST" id="payment-form">
+            <div class="fieldcontainer" data-role="fieldcontain">
+                <label >Details </label>
+                <p > <input type="text" id="name" data-stripe="name" value="name" style="width: 30%"/> </p>
+                <p > <input type="text" id="email" value="email" style="width: 30%"/> </p>
+                <p > <input type="text" id="address_line1" data-stripe="address" value="address" style="width: 30%"/> </p>
+                <p > <select id="currency" data-stripe="currency" style="width: 31%">
+                        <option value="usd">usd</option>
+                        <option value="usd">dkk</option>
+                        <option value="usd">eur</option>
+                     </select> </p>
+                <p > <input type="text" id="quantity" value="quantity" style="width: 8%"/>
+                     x
+                     <input type="text" id="priceEach" value="price each" style="width: 8%; background-color: #C0C0C0" readonly/>
+                     =
+                     <input type="text" id="priceTotal" data-stripe="amount" value="price total" style="width: 8%; background-color: #C0C0C0" readonly/> </p>
+                <p > <input type="text" id="cardNumber" data-stripe="number" value="card number" style="width: 19%"/> <input type="text" id="cvc" data-stripe="cvc" value="cvc" style="width: 9%"/> </p>
+                <p > <input type="text" id="expMonth" data-stripe="exp_month" value="exp. month" style="width: 14%"/> <input type="text" id="expYear" data-stripe="exp_year" value="exp. year" style="width: 14%"/> </p>
+                <p > <button type="submit">Submit Payment</button> </p>
+             </div>
+             </form>
+
+      <footer>
+        <p>&copy; Førsteårsprojekt - prototype 1.0.0</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+        <div style="height:12580px;background:#333;"></div>
+    </div>    
+    <div style="height:100px;background:#ccc;"></div>    
+</div>
