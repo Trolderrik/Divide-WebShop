@@ -9,7 +9,7 @@
     position: relative;
     height: auto;
     text-align: center;
-    background-image: url(/img/greengrad.png);
+    background-image: url(/img/greengoldgrad.png);
     background-attachment: fixed;
 }
 
@@ -35,8 +35,9 @@
 
 #maincontent {
     width: 55%;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url(/img/50pc.png);
+    margin: 0 auto 0 auto;
+    padding: 0;
 }
 
 #header_right {
