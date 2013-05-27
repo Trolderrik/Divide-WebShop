@@ -9,6 +9,8 @@
     position: relative;
     height: auto;
     text-align: center;
+    background-image: url(/img/purplegrad.png);
+    background-attachment: fixed;
 }
 
 #header_left {
