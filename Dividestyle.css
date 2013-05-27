@@ -46,3 +46,8 @@
     text-align: right;
     right: 0;
 }
+
+#calculatorback {
+    background-image: url(Images/GreenCalculatorBackground.png);
+    padding: 10px;
+}
