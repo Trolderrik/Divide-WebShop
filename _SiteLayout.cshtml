@@ -48,7 +48,7 @@
         });
         </script>
 
-        <script>
+        @{
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here https://manage.stripe.com/account
         Stripe.setApiKey("sk_test_mkGsLqEW6SLnZa487HYfJVLf");
@@ -58,16 +58,16 @@
 
         // Create the charge on Stripe's servers - this will charge the user's card
         try {
-        var charge = Stripe_Charge.create(array(
+        var charge = Stripe.Charge.create(array(
             amount = 1000, // amount in cents, again
             currency = Request["currency"],
             card = token,
             description = Request["email"])
         );
-        } catch(Stripe_CardError $e) {
-            // The card has been declined
+        } catch (Stripe.CardError e) {
+            // 
         }
-        </script>
+        }
 
         @RenderSection("Scripts", required: false)
     </head>
