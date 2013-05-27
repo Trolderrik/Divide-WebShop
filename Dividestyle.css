@@ -17,19 +17,26 @@
     width: 20%;
 }
 
+.navButton {
+    width: fill-available;
+    position: relative;
+    vertical-align: middle;
+}
+
+.navButton p {
+    text-decoration: none;
+    font-size: xx-large;
+    color: #000;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
 #header_left img {
     margin-left: auto;
     margin-right: auto;
     max-height: 25%;
     display: inline;
-}
-
-#header_left a p {
-    position: absolute;
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-    z-index: 1;
 }
 
 #maincontent {
