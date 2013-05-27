@@ -15,19 +15,21 @@
     position: fixed;
     z-index: 1;
     width: 20%;
-    text-align: left;
 }
 
 #header_left img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     max-height: 25%;
+    display: inline;
 }
 
-#header_left a:link {
+#header_left a p {
+    position: absolute;
+    text-align: center;
     color: #000;
     text-decoration: none;
+    z-index: 1;
 }
 
 #maincontent {
