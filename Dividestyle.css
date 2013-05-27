@@ -23,20 +23,12 @@
     vertical-align: middle;
 }
 
-.navButton p {
-    text-decoration: none;
-    font-size: xx-large;
-    color: #000;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-}
-
 #header_left img {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     max-height: 25%;
-    display: inline;
+    display: block;
 }
 
 #maincontent {
