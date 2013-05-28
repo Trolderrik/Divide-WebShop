@@ -3,6 +3,7 @@
 }
 
 html {
+    position: relative;
     height: 100%;
 }
 
@@ -21,6 +22,7 @@ html {
     position: fixed;
     z-index: 1;
     width: 20%;
+    height: 100%;
 }
 
 .navButton {
@@ -62,6 +64,7 @@ html {
 
 #footer_block {
     width: fill-available;
+    min-height: inherit;
 }
 
 #footer_block p {
