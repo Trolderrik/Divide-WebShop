@@ -55,3 +55,7 @@
 .default_padding {
     padding-bottom: 10px;
 }
+
+#footer_block {
+    display: block;
+}
